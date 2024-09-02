@@ -140,8 +140,7 @@ LOGIN_REDIRECT_URL = 'learning_logs:index'
 LOGIN_REDIRECT_URL = 'learning_logs:index'
 LOGOUT_REDIRECT_URL = 'learning_logs:index'
 LOGIN_URL = 'accounts:login'
-
-#Platform.sh settings
+"#Platform.sh settings
 from platformshconfig import Config
 
 config = Config()
@@ -165,4 +164,4 @@ if config.is_valid_platform():
                     'PORT': db_settings['port'],
                     },
                 }
-
+"
